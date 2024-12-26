@@ -3,38 +3,44 @@ This project demonstrates the implementation of a comprehensive Library Manageme
 
 ## 1. Database Setup
 The first step in building the Library Management System involved setting up the database and creating the necessary tables to store various pieces of data related to library operations. The following tables were created:
+  ![image](https://github.com/user-attachments/assets/b9327ebb-0e1e-4f03-9228-b831c3f5b479)
 
-- #### Branches Table: Stores information about different library branches (branch ID, manager, contact info, etc.).
-- #### Employees Table: Stores employee details (employee ID, name, position, salary, and branch affiliation).
-- #### Members Table: Stores member details (member ID, name, address, registration date).
-- #### Books Table: Stores book details (book ISBN, title, author, publisher, category, rental price, and status).
-- #### Issued Status Table: Records the books that have been issued to members (issue ID, member ID, book ISBN, issue date, employee ID responsible).
-- #### Return Status Table: Records the return of issued books and includes the condition of the book when returned (return ID, issue ID, book quality).
+-  Branches Table : Stores information about different library branches (branch ID, manager, contact info, etc.).
+-  Employees Table: Stores employee details (employee ID, name, position, salary, and branch affiliation).
+-  Members Table: Stores member details (member ID, name, address, registration date).
+-  Books Table: Stores book details (book ISBN, title, author, publisher, category, rental price, and status).
+-  Issued Status Table: Records the books that have been issued to members (issue ID, member ID, book ISBN, issue date, employee ID responsible).
+-  Return Status Table: Records the return of issued books and includes the condition of the book when returned (return ID, issue ID, book quality).
 These tables were designed with foreign key relationships to enforce data integrity between members, employees, books, and branches, ensuring proper references and relationships between the entities.
 
 ## 2. CRUD Operations
-### CRUD (Create, Read, Update, Delete) operations were performed to ensure that the data could be properly managed within the system:
+  CRUD (Create, Read, Update, Delete) operations were performed to ensure that the data could be properly managed within the system:
 
-### Create: Sample records were inserted into the books, members, and other relevant tables. This includes adding new books to the inventory, registering new members, and hiring new employees.
+- ## Create :
+  Sample records were inserted into the books, members, and other relevant tables. This includes adding new books to the inventory, registering new members, and hiring new employees.
 
-### Read: SQL queries were used to retrieve and display data from various tables, such as:
+- ## Read:
+  SQL queries were used to retrieve and display data from various tables, such as:
+- Displaying a list of all available books.
+- Retrieving member details and their issued books.
 
-### Displaying a list of all available books.
-Retrieving member details and their issued books.
-Update: Records were updated to simulate real-world changes, such as:
+- ## Update:
+  Records were updated to simulate real-world changes, such as:
 
-Updating employee details (e.g., changing a member’s address or updating an employee's salary).
-Modifying book availability after it has been issued or returned.
-Delete: Records were deleted from the members table to simulate the removal of a member who no longer uses the library or when a book is permanently removed from the library’s inventory.
+- Updating employee details (e.g., changing a member’s address or updating an employee's salary).
+- Modifying book availability after it has been issued or returned.
+  
+- ## Delete:
+  Records were deleted from the members table to simulate the removal of a member who no longer uses the library or when a book is permanently removed from the library’s inventory.
 
 ## 3. CTAS (Create Table As Select)
 The CTAS (Create Table As Select) statement was used to create new summary tables based on specific query results. This functionality was utilized for:
 
-- #### Creating Summary Tables: New tables were created to store the aggregated data, such as the total number of books issued and the total rental revenue generated from book rentals.
-Example:
-
-- #### Summary of Books Issued: A new table was generated showing each book and its total number of issues, useful for analyzing the popularity of books.
-This feature allowed for the efficient creation of reports and analytics, ensuring data could be summarized and further processed in a streamlined way.
+- ### Creating Summary Tables:
+  New tables were created to store the aggregated data, such as the total number of books issued and the total rental revenue generated from book rentals.
+  Example:
+  Summary of Books Issued: A new table was generated showing each book and its total number of issues, useful for analyzing the popularity of books.
+  This feature allowed for the efficient creation of reports and analytics, ensuring data could be summarized and further processed in a streamlined way.
 
 ## 4. Data Analysis and Findings
 Several advanced SQL queries were developed to analyze and retrieve specific data insights. The following tasks were accomplished:
