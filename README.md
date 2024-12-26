@@ -1,11 +1,12 @@
-# Library-Management-System-with-SQL
+# Library-Management-System-with-SQL#
 This project demonstrates the implementation of a comprehensive Library Management System (LMS) using SQL. The system is designed to efficiently manage and manipulate data related to library operations, including the management of books, members, employees, and the overall library branches. The project showcases advanced database management techniques such as CRUD operations, CTAS (Create Table As Select), and the ability to execute complex SQL queries for data analysis and reporting.
 
 ## 1. Database Setup
 The first step in building the Library Management System involved setting up the database and creating the necessary tables to store various pieces of data related to library operations. The following tables were created:
+
   ![image](https://github.com/user-attachments/assets/b9327ebb-0e1e-4f03-9228-b831c3f5b479)
 
--  Branches Table : Stores information about different library branches (branch ID, manager, contact info, etc.).
+-  ## Branches Table ##: Stores information about different library branches (branch ID, manager, contact info, etc.).
 -  Employees Table: Stores employee details (employee ID, name, position, salary, and branch affiliation).
 -  Members Table: Stores member details (member ID, name, address, registration date).
 -  Books Table: Stores book details (book ISBN, title, author, publisher, category, rental price, and status).
