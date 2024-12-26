@@ -6,7 +6,7 @@ The first step in building the Library Management System involved setting up the
 
   ![image](https://github.com/user-attachments/assets/b9327ebb-0e1e-4f03-9228-b831c3f5b479)
 
--  ## Branches Table ##: Stores information about different library branches (branch ID, manager, contact info, etc.).
+-  Branches Table: Stores information about different library branches (branch ID, manager, contact info, etc.).
 -  Employees Table: Stores employee details (employee ID, name, position, salary, and branch affiliation).
 -  Members Table: Stores member details (member ID, name, address, registration date).
 -  Books Table: Stores book details (book ISBN, title, author, publisher, category, rental price, and status).
@@ -16,23 +16,16 @@ These tables were designed with foreign key relationships to enforce data integr
 
 ## 2. CRUD Operations
   CRUD (Create, Read, Update, Delete) operations were performed to ensure that the data could be properly managed within the system:
+- Create: Sample records were inserted into the books, members, and other relevant tables. This includes adding new books to the inventory, registering new members, and hiring new employees.
+- Read:SQL queries were used to retrieve and display data from various tables, such as:
+  - Displaying a list of all available books.
+  - Retrieving member details and their issued books.
 
-- ## Create :
-  Sample records were inserted into the books, members, and other relevant tables. This includes adding new books to the inventory, registering new members, and hiring new employees.
-
-- ## Read:
-  SQL queries were used to retrieve and display data from various tables, such as:
-- Displaying a list of all available books.
-- Retrieving member details and their issued books.
-
-- ## Update:
-  Records were updated to simulate real-world changes, such as:
-
-- Updating employee details (e.g., changing a member’s address or updating an employee's salary).
-- Modifying book availability after it has been issued or returned.
+- Update:Records were updated to simulate real-world changes, such as:
+  - Updating employee details (e.g., changing a member’s address or updating an employee's salary).
+  - Modifying book availability after it has been issued or returned.
   
-- ## Delete:
-  Records were deleted from the members table to simulate the removal of a member who no longer uses the library or when a book is permanently removed from the library’s inventory.
+- Delete: Records were deleted from the members table to simulate the removal of a member who no longer uses the library or when a book is permanently removed from the library’s inventory.
 
 ## 3. CTAS (Create Table As Select)
 The CTAS (Create Table As Select) statement was used to create new summary tables based on specific query results. This functionality was utilized for:
