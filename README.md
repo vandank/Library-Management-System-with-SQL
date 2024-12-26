@@ -1,4 +1,4 @@
-# Library-Management-System-with-SQL#
+# Library-Management-System-with-SQL
 This project demonstrates the implementation of a comprehensive Library Management System (LMS) using SQL. The system is designed to efficiently manage and manipulate data related to library operations, including the management of books, members, employees, and the overall library branches. The project showcases advanced database management techniques such as CRUD operations, CTAS (Create Table As Select), and the ability to execute complex SQL queries for data analysis and reporting.
 
 ## 1. Database Setup
